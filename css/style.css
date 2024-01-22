@@ -12,12 +12,6 @@
     box-sizing: border-box;
 }
 
-/* ----------DEBUG------------- */
-.debug{
-    border: 2px dashed #008000;
-}
-/* ----------DEBUG------------- */
-
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -171,4 +165,38 @@ main .container .card .product-hover{
 }
 main .container .card:hover .product-hover{
     display: block;
+}
+
+/* FOOTER */
+footer{
+    background: var(--bg-footer);
+    color: white;
+    padding: 20px 0;
+}
+footer p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+footer i{
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin-left: 7px;
+}
+footer .container.d-flex{
+    justify-content: space-between;
+}
+footer .container div.d-flex{
+    justify-content: space-between;
+    width: 350px;
+    font-size: .7rem;
+}
+footer .container .social{
+    text-align: center;
+}
+footer .container .social a{
+    color: white;
+}
+footer .container .social p{
+    font-size: .9rem;
+    margin-bottom: 5px;
 }
