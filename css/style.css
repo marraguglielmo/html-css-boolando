@@ -17,7 +17,7 @@
 /* ----------DEBUG------------- */
 
 body{
-    font-family: 'Roboto flex', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 img{
@@ -83,4 +83,32 @@ header .categories li a:hover{
 }
 header .menu li a:hover{
     color: black;
+}
+
+/* MAIN */
+h2{
+    font-size: 1.2rem;
+}
+h3{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+main .container{
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+main .container .card{
+    width: 32%;
+}
+main .container .card .card-text{
+    line-height: 22px;
+}
+main .container .card .new-price{
+    color: rgb(218, 4, 4);
+    font-weight: 600;
+}
+main .container .card .old-price{
+    text-decoration:line-through;
 }
