@@ -14,11 +14,13 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    margin-top: 70px;
 }
 
 img{
     width: 100%;
 }
+
 
 /* UTILS */
 .container{
@@ -31,11 +33,15 @@ img{
     display: flex;
 }
 
-
 /* HEADER */
 header{
     background-color: var(--bg-header);
     color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 header .container{
     line-height: 30px;
@@ -184,6 +190,10 @@ footer i{
 }
 footer .container.d-flex{
     justify-content: space-between;
+}
+footer .container.d-flex span:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 footer .container div.d-flex{
     justify-content: space-between;
