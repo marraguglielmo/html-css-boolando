@@ -116,6 +116,7 @@ main .container .card .old-price{
 
 main .container .card .card-img{
     position: relative;
+    z-index: 1;
 }
 /* FAVORITE */
 main .container .favorite{
@@ -125,6 +126,7 @@ main .container .favorite{
     right: 0;
     padding: 5px 12px;
     font-size: 1.5em;
+    z-index: 2;
 }
 main .container .favorite i:hover{
     color: var(--bg-red);
@@ -139,6 +141,7 @@ main .container .card .discount{
     color: white;
     padding: 1px 7px;
     font-size: .8rem;
+    z-index: 2;
 }
 
 /* SOSTENIBILITY */
@@ -150,10 +153,22 @@ main .container .card .sostenibility{
     padding: 1px 7px;
     font-size: .8rem;
     color: white;
+    z-index: 2;
 }
-
 main .container .card#card-6 .sostenibility{
     position: absolute;
     bottom: 40px;
     left: 0;
+}
+
+/* IMMAGINI HOVER */
+main .container .card .product-hover{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+main .container .card:hover .product-hover{
+    display: block;
 }
