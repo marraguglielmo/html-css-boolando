@@ -2,6 +2,8 @@
     --bg-header: #E27132;
     --bg-body: #FFFFFF;
     --bg-footer: #202020;
+    --bg-red: #da0404;
+    --bg-sostenibility: green;
 }
 
 *{
@@ -12,7 +14,7 @@
 
 /* ----------DEBUG------------- */
 .debug{
-    border: 2px dashed green;
+    border: 2px dashed #008000;
 }
 /* ----------DEBUG------------- */
 
@@ -98,7 +100,6 @@ main .container{
     justify-content: space-between;
     padding: 30px 0;
 }
-
 main .container .card{
     width: 32%;
 }
@@ -106,9 +107,53 @@ main .container .card .card-text{
     line-height: 22px;
 }
 main .container .card .new-price{
-    color: rgb(218, 4, 4);
+    color: var(--bg-red);
     font-weight: 600;
 }
 main .container .card .old-price{
     text-decoration:line-through;
+}
+
+main .container .card .card-img{
+    position: relative;
+}
+/* FAVORITE */
+main .container .favorite{
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 5px 12px;
+    font-size: 1.5em;
+}
+main .container .favorite i:hover{
+    color: var(--bg-red);
+    cursor: pointer;
+}
+
+/* DISCOUNT */
+main .container .card .discount{
+    background-color: var(--bg-red);
+    position: absolute;
+    bottom: 40px;
+    color: white;
+    padding: 1px 7px;
+    font-size: .8rem;
+}
+
+/* SOSTENIBILITY */
+main .container .card .sostenibility{
+    background-color: var(--bg-sostenibility);
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    padding: 1px 7px;
+    font-size: .8rem;
+    color: white;
+}
+
+main .container .card#card-6 .sostenibility{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
 }
